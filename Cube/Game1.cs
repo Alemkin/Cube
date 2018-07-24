@@ -1,16 +1,13 @@
-﻿using Microsoft.Xna.Framework;
+﻿#define DEBUG
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
 using Nez;
 
 namespace Cube.Desktop {
   public class Game1 : Core {
     GraphicsDeviceManager graphics;
-    SpriteBatch spriteBatch;
 
     public Game1() {
-      graphics = new GraphicsDeviceManager(this);
-      Content.RootDirectory = "Content";
     }
 
     protected override void Initialize() {
@@ -18,7 +15,6 @@ namespace Cube.Desktop {
     }
 
     protected override void LoadContent() {
-      spriteBatch = new SpriteBatch(GraphicsDevice);
     }
 
     protected override void UnloadContent() {
